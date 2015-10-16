@@ -24,6 +24,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 		auditEntity.setCreatedDate(new Date());
 		departmentEntity.setAuditEntity(auditEntity);
 		session.save(departmentEntity);
+		System.out.println("Saved");
 		return departmentEntity.getId();
 	}
 
